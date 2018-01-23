@@ -8,8 +8,9 @@ public class MyDrawing extends JPanel {
 	private Cat cat;
 	private Photo photo;
 	private Sun sun;
+	private Clock clock;
 	private window w;
-	public MyDrawing() 
+	public MyDrawing()
 	{
 		// Add critters to the drawing
 		cat = new Cat();
@@ -23,9 +24,10 @@ public class MyDrawing extends JPanel {
 		cat.draw(g, 50, 50);
 		photo.draw(g, 200, 50);
 		sun.draw(g, 150, 150);
+		clock.draw(g, 100, 100);
 		w.draw(g, 200,100);
 	}
-	
+
 	/**
 	 * @param args
 	 */
@@ -37,7 +39,7 @@ public class MyDrawing extends JPanel {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// Set the size (otherwise only title bar displays)
 		frame.setSize(400, 400);
-		
+
 		// Frame will not display until you set visible true
 		frame.setVisible(true);
 	}
